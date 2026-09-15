@@ -117,7 +117,7 @@ export default function Home() {
           <p className="text-[#D4AF37] tracking-[0.4em] text- mb-6">{DOMAIN.toUpperCase()} • VI • LAGOS • LIVE</p>
           <h1 className="text-6xl md:text-8xl font-serif leading-[0.85]">We build with you<br/><span className="text-[#D4AF37] italic font-light">in MIND</span></h1>
           <p className="mt-8 text-sm md:text-lg text-white/70 max-w-2xl mx-auto">
-            {COMPANY_NAME} — Young Black engineers (20s-30s) in VI building AI, luxury commerce & scalable platforms live on Vercel.
+            VI Lagos studio crafting AI & commerce platforms for ambitious brands.
           </p>
           <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
             <a href={WHATSAPP} target="_blank" className="bg-[#25D366] text-black px-10 py-4 text-xs tracking-widest font-bold">CHAT ON WHATSAPP →</a>
