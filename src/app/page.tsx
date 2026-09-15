@@ -87,17 +87,36 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
+      {/* HERO - VIDEO ACTIVE */}
       <section className="relative w-full h-screen min-h- flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
         <div className="absolute inset-0">
-          <Image src="/hero.png" alt={`${COMPANY_NAME} VI Lagos`} fill className="object-cover object-center" priority />
-          <div className="absolute inset-0 bg-black/40" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/20 to-black/50" />
+
+          {/* WATERMARK COVER - hides Luma watermark */}
+          <div className="absolute bottom-0 right-0 w-full h-20 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent pointer-events-none" />
+          <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-black/80 backdrop-blur px-3 py-1.5 rounded-full border border-[#D4AF37]/20">
+            <Image src="/BlackseedsincorpLogo(new).png" alt="logo" width={20} height={20} className="rounded-full object-contain" />
+            <span className="text- tracking-[0.2em] text-[#D4AF37]">BLACKSEEDSINCORP.COM</span>
+          </div>
         </div>
+
+        {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-5xl mt-20">
-          <p className="text-[#D4AF37] tracking-[0.4em] text- mb-6">{DOMAIN.toUpperCase()} • VI • LAGOS</p>
-          <h1 className="text-6xl md:text- font-serif leading-[0.85]">We build with you<br/><span className="text-[#D4AF37] italic font-light">in MIND</span></h1>
-          <p className="mt-8 text- md:text-lg text-white/70 max-w-2xl mx-auto">
+          <p className="text-[#D4AF37] tracking-[0.4em] text- mb-6">{DOMAIN.toUpperCase()} • VI • LAGOS • LIVE</p>
+          <h1 className="text-6xl md:text-8xl font-serif leading-[0.85]">We build with you<br/><span className="text-[#D4AF37] italic font-light">in MIND</span></h1>
+          <p className="mt-8 text-sm md:text-lg text-white/70 max-w-2xl mx-auto">
             {COMPANY_NAME} — Young Black engineers (20s-30s) in VI building AI, luxury commerce & scalable platforms live on Vercel.
           </p>
           <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
@@ -135,7 +154,6 @@ export default function Home() {
               </div>
             </a>
           ))}
-          {/* Extra CTA card */}
           <a href={WHATSAPP} target="_blank" className="group relative h- bg-[#D4AF37] overflow-hidden border border-[#D4AF37] hover:bg-[#c9a62f] transition p-8 flex flex-col justify-between text-black">
             <div>
               <p className="text- tracking-widest">07 / YOUR IDEA</p>
