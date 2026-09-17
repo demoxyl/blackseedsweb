@@ -60,6 +60,15 @@ const PROJECTS = [
     tech: "NEXT.JS • AI • ADTECH",
     link: "https://beelight-advertising-v3.vercel.app/",
     gradient: "from-amber-500/20 to-transparent"
+  },
+  {
+    id: "07",
+    title: "BlackSeeds Park",
+    tag: "CAR PARK SYSTEM",
+    desc: "Smart car park management — real-time slot reservation, queueing & payments. Built & shipped live.",
+    tech: "NEXT.JS • REAL-TIME • RENDER",
+    link: "https://blackseedsincorp.onrender.com/",
+    gradient: "from-[#D4AF37]/30 to-transparent"
   }
 ];
 
@@ -117,24 +126,24 @@ export default function Home() {
           <p className="text-[#D4AF37] tracking-[0.4em] text- mb-6">{DOMAIN.toUpperCase()} • VI • LAGOS • LIVE</p>
           <h1 className="text-6xl md:text-8xl font-serif leading-[0.85]">We build with you<br/><span className="text-[#D4AF37] italic font-light">in MIND</span></h1>
           <p className="mt-8 text-sm md:text-lg text-white/70 max-w-2xl mx-auto">
-            VI Lagos studio crafting AI & commerce platforms for ambitious brands.
-          </p>
+  Software engineers shipping AI SaaS, luxury commerce, adtech & smart infrastructure — built in Lagos, live globally.
+</p>
           <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
             <a href={WHATSAPP} target="_blank" className="bg-[#25D366] text-black px-10 py-4 text-xs tracking-widest font-bold">CHAT ON WHATSAPP →</a>
-            <a href="#work" className="border border-white/30 px-10 py-4 text-xs tracking-widest backdrop-blur">VIEW OUR WORK (6 LIVE)</a>
+            <a href="#work" className="border border-white/30 px-10 py-4 text-xs tracking-widest backdrop-blur">VIEW OUR WORK (7 LIVE)</a>
           </div>
         </div>
         <div className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-[#0A0A0A] to-transparent z-10" />
       </section>
 
-      {/* WORK - 6 LIVE PROJECTS */}
+      {/* WORK - 7 LIVE PROJECTS */}
       <section id="work" className="px-6 md:px-16 py-24 bg-[#0F0F0F]">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <p className="text-[#D4AF37] text- tracking-[0.4em] mb-3">{DOMAIN.toUpperCase()} • SELECTED WORK — 6 LIVE PROJECTS</p>
+            <p className="text-[#D4AF37] text- tracking-[0.4em] mb-3">{DOMAIN.toUpperCase()} • SELECTED WORK — 7 LIVE PROJECTS</p>
             <h2 className="text-4xl md:text-6xl font-serif">Built & Shipped.</h2>
           </div>
-          <p className="text-white/40 text-sm max-w-xs">All live on Vercel. Built in Trae IDE • Next.js 16 • Tailwind</p>
+          <p className="text-white/40 text-sm max-w-xs">All live on Vercel & Render. Built in Trae IDE • Next.js 16 • Tailwind</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -156,7 +165,7 @@ export default function Home() {
           ))}
           <a href={WHATSAPP} target="_blank" className="group relative h- bg-[#D4AF37] overflow-hidden border border-[#D4AF37] hover:bg-[#c9a62f] transition p-8 flex flex-col justify-between text-black">
             <div>
-              <p className="text- tracking-widest">07 / YOUR IDEA</p>
+              <p className="text- tracking-widest">08 / YOUR IDEA</p>
               <h3 className="text-4xl font-serif mt-2 leading-[0.9]">Let's build<br/>your idea<br/>next.</h3>
               <p className="mt-3 text-sm opacity-70">From idea to Vercel in weeks. VI team, global shipping.</p>
             </div>
@@ -197,14 +206,14 @@ export default function Home() {
             </div>
             <textarea name="message" required rows={4} placeholder={`Tell ${COMPANY_NAME} about your idea...`} className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-4 text-sm focus:border-[#D4AF37] outline-none"></textarea>
             <button type="submit" className="w-full bg-[#F9F6F0] text-black py-4 text-xs tracking-widest font-bold">SEND TO {COMPANY_NAME.toUpperCase()} + WHATSAPP →</button>
-            <p className="text- text-white/20 text-center">{COMPANY_NAME} • {DOMAIN} • 6 LIVE PROJECTS ON VERCEL</p>
+            <p className="text- text-white/20 text-center">{COMPANY_NAME} • {DOMAIN} • 7 LIVE PROJECTS ON VERCEL</p>
           </form>
         </div>
       </section>
 
       <footer className="px-6 md:px-16 py-8 border-t border-white/5 flex justify-between text- tracking-widest text-white/30">
         <span>© 2026 {COMPANY_NAME.toUpperCase()} • {DOMAIN.toUpperCase()}</span>
-        <span>6 LIVE • LAGOS • VI • {DOMAIN}</span>
+        <span>7 LIVE • LAGOS • VI • {DOMAIN}</span>
       </footer>
     </main>
   );
